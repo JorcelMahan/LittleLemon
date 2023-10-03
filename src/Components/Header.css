@@ -1,15 +1,16 @@
 header {
   border-bottom: 1px solid #ccc;
-  padding: 0.5em 1em;
+  padding: 0.5rem 20rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 6rem;
+  margin: 0 auto;
 }
 
-a {
+header a {
   text-decoration: none;
   color: #000;
+  padding: 0.5em;
 }
 
 .logo img {
@@ -17,12 +18,36 @@ a {
 }
 
 /* Navigation */
-ul {
+header nav {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
 }
 
-li {
-  list-style: none;
+a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  background-color: #495e57;
+  color: white;
+  border-radius: 0.8rem;
+}
+
+/* hide menu on mobile */
+
+/* decrease padding right and left on mobile */
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem;
+    justify-content: center;
+  }
+
+  .logo img {
+    max-width: 200px;
+  }
+
+  header nav {
+    display: none;
+  }
 }

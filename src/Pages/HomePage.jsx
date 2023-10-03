@@ -1,9 +1,12 @@
+import Hero from '../Components/Hero';
 import Layout from '../Components/Layout';
+import Specials from '../Components/Specials';
 
 const HomePage = () => {
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <Hero />
+      <Specials />
     </Layout>
   );
 };

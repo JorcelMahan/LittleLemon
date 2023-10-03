@@ -1,0 +1,49 @@
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  width: 100%;
+  grid-gap: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  width: 100%;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  width: 100%;
+}
+
+button[type='submit'] {
+  background-color: #f4ce14;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 250px;
+  grid-column: 1 / 3;
+  /* center */
+  justify-self: center;
+}
+
+.error {
+  color: tomato;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}

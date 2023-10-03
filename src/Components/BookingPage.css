@@ -1,0 +1,23 @@
+.booking-page {
+  background-color: #495e57;
+  padding: 0.5rem 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  alig-items: center;
+  margin: 0 auto;
+}
+
+section h1 {
+  color: #f4ce14;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .booking-page {
+    padding: 0.5rem 1rem;
+  }
+}
